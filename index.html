@@ -1,0 +1,238 @@
+<html lang="lt"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLOSTO AKIS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: #ffffff;
+            color: #1a1a1a;
+            font-family: monospace;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            font-weight: normal;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+        
+        h2 {
+            font-size: 1.5em;
+            font-weight: normal;
+            margin: 40px 0 20px 0;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            font-size: 1em;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 30px 0;
+        }
+        
+        .lamp-item {
+            border: 1px solid #1a1a1a;
+            padding: 0;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            transition: opacity 0.2s;
+        }
+        
+        .lamp-item:hover {
+            opacity: 0.7;
+        }
+        
+        .lamp-img {
+            width: 100%;
+            height: 300px;
+            background: #f5f5f5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1px solid #1a1a1a;
+            overflow: hidden;
+        }
+        
+        .lamp-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .lamp-info {
+            padding: 15px;
+        }
+        
+        .lamp-info h3 {
+            font-weight: normal;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        
+        hr {
+            border: none;
+            border-top: 1px solid #1a1a1a;
+            margin: 40px 0;
+        }
+        
+        .contact {
+            margin-top: 40px;
+        }
+        
+        a {
+            color: #1a1a1a;
+        }
+        
+        footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #1a1a1a;
+            font-size: 0.9em;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        
+        .product-detail {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin: 30px 0;
+        }
+        
+        .product-detail img {
+            width: 100%;
+            border: 1px solid #1a1a1a;
+        }
+        
+        .product-info-detail {
+            padding: 20px 0;
+        }
+        
+        .product-info-detail h3 {
+            font-weight: normal;
+            margin: 20px 0 10px 0;
+            font-size: 1.2em;
+        }
+        
+        @media (max-width: 768px) {
+            .product-detail {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>GLOSTO AKIS</h1>
+        <p>Pramoniniai šviestuvai. Žalios medžiagos. Jokių kompromisų.</p>
+    </header>
+
+    <hr>
+
+    <section>
+        <h2>Filosofija</h2>
+        <p> Kiekvienas kūrinys gimsta iš antrinio gyvenimo – iš medžiagų, kurios jau buvo, tarnavo, dėvėjosi. Metalas, betonas, stiklas – šaltos, tvirtos, brutalios substancijos, perdirbtos ir prikelbtos naujam etapui.</p>
+        <p>Šviesa čia tampa jungtimi tarp priešybių. Ji įsiskverbia į kietą paviršių, pramuša grubumą ir sukuria šilumos pojūtį.</p>
+        <p>Tai ne tik dizaino objektai. Tai tylūs kontrasto įsikūnijimai – tarp praeities ir dabarties, tarp šalčio ir šviesos, tarp daikto ir jo naujos jo paskirties.</p>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Kolekcija</h2>
+        <div class="gallery">
+            <a href="product-01.html" class="lamp-item">
+                <div class="lamp-img">
+                    <img src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?w=400&h=400&fit=crop&sat=-100" alt="Stalo šviestuvas">
+                </div>
+                <div class="lamp-info">
+                    <h3>Modelis 01 — Stalo</h3>
+                    <p>Aukštis: 45cm</p>
+                    <p>Pagrindas: 15x15cm</p>
+                    <p>Svoris: 8kg</p>
+                </div>
+            </a>
+            
+            <a href="#" class="lamp-item">
+                <div class="lamp-img">
+                    <img src="https://images.unsplash.com/photo-1504198266287-1659872e6590?w=400&h=400&fit=crop&sat=-100" alt="Grindų šviestuvas">
+                </div>
+                <div class="lamp-info">
+                    <h3>Modelis 02 — Grindų</h3>
+                    <p>Aukštis: 120cm</p>
+                    <p>Pagrindas: 20x20cm</p>
+                    <p>Svoris: 18kg</p>
+                </div>
+            </a>
+            
+            <a href="#" class="lamp-item">
+                <div class="lamp-img">
+                    <img src="https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?w=400&h=400&fit=crop&sat=-100" alt="Pakabinamas šviestuvas">
+                </div>
+                <div class="lamp-info">
+                    <h3>Modelis 03 — Pakabinamas</h3>
+                    <p>Aukštis: 30cm</p>
+                    <p>Skersmuo: 18cm</p>
+                    <p>Svoris: 5kg</p>
+                </div>
+            </a>
+            
+            <a href="#" class="lamp-item">
+                <div class="lamp-img">
+                    <img src="https://images.unsplash.com/photo-1513467535987-fd81bc7d62f8?w=400&h=400&fit=crop&sat=-100" alt="Sieninis šviestuvas">
+                </div>
+                <div class="lamp-info">
+                    <h3>Modelis 04 — Sieninis</h3>
+                    <p>Aukštis: 25cm</p>
+                    <p>Gylis: 12cm</p>
+                    <p>Svoris: 4kg</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Medžiagos</h2>
+        <p>— Portlando cementas</p>
+        <p>— Užpildų akmuo</p>
+        <p>— Plieno armatūra</p>
+        <p>— Medvilniniu audiniu apvyniotas elektrinis laidas</p>
+        <p>— Edison lemputės lizdai</p>
+    </section>
+
+    <hr>
+
+    <section class="contact">
+        <h2>Kontaktai</h2>
+        <p><a href="mailto:glosto@akis.com">glosto@akis.lt</a></p>
+        <p><a href="tel:+37064736093">+370 64 736 093</a></p>
+        <p>[Vilnius]</p>
+    </section>
+
+    <footer>
+        <p>© 2025 Glosto Akis. Visi gaminiai daromi pagal užsakymą.</p>
+    </footer>
+
+</body></html>
