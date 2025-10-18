@@ -130,6 +130,14 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .logo-group img {
+        height: 62px;
+    }
+
+    .logo-group h1 {
+        font-size: 1.5rem;
+    }
+
     .product-detail {
         grid-template-columns: 1fr;
     }
