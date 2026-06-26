@@ -1,4 +1,7 @@
-<html lang="lt"><head>
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <script>(function(){try{if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark');}catch(e){}})();</script>
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
@@ -18,12 +21,15 @@
     <title>GLOSTO AKIS</title>
 </head>
 <body>
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+        <span data-light>TAMSA</span>
+        <span data-dark>ŠVIESA</span>
+    </button>
+
     <header>
-        <div class="header-container">
-            <div class="logo-group">
-                <img src="img/logo-header-black.svg" alt="Logo">
-                <h1>GLOSTO AKIS</h1>
-            </div>
+        <div class="logo-group">
+            <img src="img/logo-header-black.svg" alt="Logo">
+            <h1>GLOSTO AKIS</h1>
         </div>
     </header>
 
@@ -40,51 +46,34 @@
     <section>
         <h2>Kolekcija</h2>
         <div class="gallery">
-            <a href="../products/01/" class="lamp-item">
+            <a href="products/01/" class="lamp-item">
                 <div class="lamp-img">
-                    <img src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?w=400&h=400&fit=crop&sat=-100" alt="Stalo šviestuvas">
+                    <img src="img/product/lamp_1_color.png" alt="Sunkusis šviestuvas">
                 </div>
                 <div class="lamp-info">
-                    <h3>Modelis 01 — Stalo</h3>
-                    <p>Aukštis: 45cm</p>
-                    <p>Pagrindas: 15x15cm</p>
-                    <p>Svoris: 8kg</p>
+                    <h3>Modelis 01 —</h3>
+                    <p>185 cm · 45 kg</p>
                 </div>
             </a>
-            
-            <a href="../products/01/" class="lamp-item">
+
+            <a href="products/02/" class="lamp-item">
                 <div class="lamp-img">
-                    <img src="https://images.unsplash.com/photo-1504198266287-1659872e6590?w=400&h=400&fit=crop&sat=-100" alt="Grindų šviestuvas">
+                    <img src="img/product/lamp_2_color.png" alt="Grindų šviestuvas">
                 </div>
                 <div class="lamp-info">
-                    <h3>Modelis 02 — Grindų</h3>
-                    <p>Aukštis: 120cm</p>
-                    <p>Pagrindas: 20x20cm</p>
-                    <p>Svoris: 18kg</p>
+                    <h3>Modelis 02 —</h3>
+                    <p>120 cm · 18 kg</p>
+                    <p>Pagrindas 20×20 cm</p>
                 </div>
             </a>
-            
-            <a href="../products/01/" class="lamp-item">
+
+            <a href="products/03/" class="lamp-item">
                 <div class="lamp-img">
-                    <img src="https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?w=400&h=400&fit=crop&sat=-100" alt="Pakabinamas šviestuvas">
+                    <img src="img/product/lamp_3_color.png" alt="Modelis 03">
                 </div>
                 <div class="lamp-info">
-                    <h3>Modelis 03 — Pakabinamas</h3>
-                    <p>Aukštis: 30cm</p>
-                    <p>Skersmuo: 18cm</p>
-                    <p>Svoris: 5kg</p>
-                </div>
-            </a>
-            
-            <a href="../products/01/" class="lamp-item">
-                <div class="lamp-img">
-                    <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=400&h=400&fit=crop&sat=-100" alt="Sieninis šviestuvas">
-                </div>
-                <div class="lamp-info">
-                    <h3>Modelis 04 — Sieninis</h3>
-                    <p>Aukštis: 25cm</p>
-                    <p>Gylis: 12cm</p>
-                    <p>Svoris: 4kg</p>
+                    <h3>Modelis 03 —</h3>
+                    <p>— cm · — kg</p>
                 </div>
             </a>
         </div>
@@ -102,5 +91,6 @@
         <p>© 2025 Glosto Akis. Visi gaminiai daromi pagal užsakymą.</p>
     </footer>
 
+    <script src="js/theme.js"></script>
 </body>
 </html>
