@@ -18,7 +18,30 @@
     <link rel="apple-touch-icon" href="https://glostoakis.lt/img/logo-favicon-black.svg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GLOSTO AKIS</title>
+    <meta name="robots" content="noindex">
+    <title>GLOSTO AKIS — Netrukus</title>
+    <style>
+        .soon {
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            gap: 24px;
+        }
+        .soon img { height: 96px; }
+        [data-theme="dark"] .soon img { filter: invert(1); }
+        .soon h1 { letter-spacing: 4px; }
+        .soon .tag {
+            color: var(--mute);
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-size: 0.85em;
+        }
+        .soon p { max-width: 520px; }
+        .soon .contact { margin-top: 20px; font-size: 0.9em; }
+    </style>
 </head>
 <body>
     <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
@@ -26,69 +49,15 @@
         <span data-dark>ŠVIESA</span>
     </button>
 
-    <header>
-        <div class="logo-group">
-            <img src="img/logo-header-black.svg" alt="Logo">
-            <h1>GLOSTO AKIS</h1>
-        </div>
-    </header>
-
-    <hr>
-
-    <section>
-        <p> Kiekvienas kūrinys gimsta iš antrinio gyvenimo – iš medžiagų, kurios jau buvo, tarnavo, dėvėjosi. Metalas, betonas, stiklas – šaltos, tvirtos, brutalios substancijos, perdirbtos ir prikeltos naujam etapui.</p>
-        <p>Šviesa čia tampa jungtimi tarp priešybių. Ji įsiskverbia į kietą paviršių, pramuša grubumą ir sukuria šilumos pojūtį.</p>
-    </section>
-
-    <hr>
-
-    <section>
-        <h2>Kolekcija</h2>
-        <div class="gallery">
-            <a href="products/01/" class="lamp-item">
-                <div class="lamp-img">
-                    <img src="img/product/lamp_1_color.png" alt="Sunkusis šviestuvas">
-                </div>
-                <div class="lamp-info">
-                    <h3>Modelis 01 —</h3>
-                    <p>185 cm · 45 kg</p>
-                </div>
-            </a>
-
-            <a href="products/02/" class="lamp-item">
-                <div class="lamp-img">
-                    <img src="img/product/lamp_2_color.png" alt="Grindų šviestuvas">
-                </div>
-                <div class="lamp-info">
-                    <h3>Modelis 02 —</h3>
-                    <p>120 cm · 18 kg</p>
-                    <p>Pagrindas 20×20 cm</p>
-                </div>
-            </a>
-
-            <a href="products/03/" class="lamp-item">
-                <div class="lamp-img">
-                    <img src="img/product/lamp_3_color.png" alt="Modelis 03">
-                </div>
-                <div class="lamp-info">
-                    <h3>Modelis 03 —</h3>
-                    <p>— cm · — kg</p>
-                </div>
-            </a>
+    <section class="soon">
+        <img src="img/logo-header-black.svg" alt="Glosto Akis" class="logo-group">
+        <h1>GLOSTO AKIS</h1>
+        <div class="tag">Netrukus · Coming soon</div>
+        <p>Ruošiame kolekciją. Puslapis netrukus bus atidarytas.</p>
+        <div class="contact">
+            <p><a href="mailto:data@glostoakis.lt">data@glostoakis.lt</a></p>
         </div>
     </section>
-
-    <hr>
-
-    <section class="contact">
-        <h2>Kontaktai</h2>
-        <p><a href="mailto:data@glostoakis.lt">data@glostoakis.lt</a> || <a href="tel:+37064736093">+370 64 736 093</a></p>
-        <p>[Vilnius]</p>
-    </section>
-
-    <footer>
-        <p>© 2025 Glosto Akis.</p>
-    </footer>
 
     <script src="js/theme.js"></script>
 </body>
