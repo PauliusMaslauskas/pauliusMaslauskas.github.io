@@ -18,8 +18,8 @@
         '12v': [
             '<b>Maitinimas:</b> 12 V DC per pridedamą adapterį (jungiamas į 220–240 V ~ 50 Hz lizdą).',
             'Naudokite tik pridedamą adapterį. Keisdami rinkitės tokį patį: 12 V DC, ne mažiau kaip 1,0 A.',
-            // TODO: add LED wattage when known: "12 V LED, __ W."
-            '<b>Šviesos šaltinis:</b> 12 V LED. Nejunkite šviestuvo tiesiai į elektros tinklą.',
+            // "iki 12 W" = adapter maximum (12 V × 1,0 A); replace with the exact LED wattage if known.
+            '<b>Šviesos šaltinis:</b> 12 V LED, iki 12 W. Nejunkite šviestuvo tiesiai į elektros tinklą.',
             'Ilgai nenaudodami ištraukite adapterį iš lizdo.',
             '<b>Kilus klausimams rašykite:</b> ' + EMAIL
         ],
