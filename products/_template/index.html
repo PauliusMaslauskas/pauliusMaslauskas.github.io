@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<!-- Template for a new piece. Copy this folder to products/NN/, replace every XX with the number
+     (e.g. 04) and fill in the specs and power type. Folders starting with _ are not published. -->
 <html lang="lt">
 <head>
     <script>(function(){try{if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark');}catch(e){}})();</script>
@@ -6,7 +8,7 @@
     <link rel="icon" href="../../img/logo-favicon-black.svg" type="image/svg+xml">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelis 02 — Grindų šviestuvas | GLOSTO AKIS</title>
+    <title>Modelis XX | GLOSTO AKIS</title>
 </head>
 <body>
     <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
@@ -19,27 +21,28 @@
     <header>
         <div class="title">
             <img src="../../img/logo-favicon-black.svg" alt="Logo">
-            <h1>MODELIS 02 —</h1>
+            <h1>MODELIS XX —</h1>
         </div>
-        <p>Grindų šviestuvas</p>
     </header>
 
     <hr>
 
     <div class="product-detail">
         <div class="product-images">
-            <img src="/img/product/lamp_02.png" alt="Grindų šviestuvas - priekinis vaizdas">
+            <img src="/img/product/lamp_XX.png" alt="Modelis XX - priekinis vaizdas">
         </div>
 
         <div class="product-info-detail">
             <h2>Aprašymas</h2>
-            <p>Modelis 02</p>
+            <p>Modelis XX</p>
 
             <h3>Specifikacijos</h3>
             <div class="specs">
-                <p>Aukštis: 120 cm</p>
-                <p>Pagrindas: 20 × 20 cm</p>
-                <p>Svoris: 18 kg</p>
+                <p>Aukštis: — cm</p>
+                <p>Svoris: — kg</p>
+                <!-- keep one of the two -->
+                <p>Maitinimas: 12 V DC · 1,0 A, adapteris pridedamas</p>
+                <p>Maitinimas: 220–240 V ~ 50 Hz, tiesiai į lizdą</p>
             </div>
 
             <h3 class="strike">Kaina</h3>
@@ -50,11 +53,15 @@
         </div>
     </div>
 
+    <!-- "12v" or "220v": shows the matching care & safety text from js/care.js -->
+    <section class="care" data-power="12v"></section>
+
     <footer>
         <p>© 2025 Glosto Akis.</p>
     </footer>
 
     <script src="../../js/theme.js"></script>
     <script src="../../js/lightbox.js"></script>
+    <script src="../../js/care.js"></script>
 </body>
 </html>

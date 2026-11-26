@@ -165,6 +165,31 @@ a { color: var(--ink); }
 
 .strike { text-decoration: line-through; }
 
+/* ── Priežiūra ir sauga (filled in by js/care.js) ─── */
+.care {
+    margin-top: 40px;
+    padding-top: 40px;
+    border-top: 1px solid var(--ink);
+}
+.care:empty { display: none; }
+.care h2 { margin-top: 0; }
+.care-cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+.care h4 {
+    font-size: 0.95em;
+    margin-bottom: 12px;
+}
+.care p {
+    margin: 0 0 10px;
+    font-size: 0.9em;
+    line-height: 1.55;
+    color: var(--spec);
+}
+.care p b { color: var(--ink); }
+
 footer {
     margin-top: 60px;
     padding-top: 20px;
@@ -177,6 +202,10 @@ footer {
     .product-detail {
         grid-template-columns: 1fr;
         gap: 40px;
+    }
+    .care-cols {
+        grid-template-columns: 1fr;
+        gap: 30px;
     }
     .title { gap: 12px; }
     .title img { height: 48px; }
