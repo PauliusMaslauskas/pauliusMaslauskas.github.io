@@ -92,9 +92,11 @@ hr {
 }
 .lamp-item:hover { opacity: 0.65; }
 
+/* Photos follow the 3:4 standard (see tools/frame_photos.py),
+   so the box takes the same shape and every lamp stands level. */
 .lamp-img {
     width: 100%;
-    height: 320px;
+    aspect-ratio: 3 / 4;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -102,8 +104,8 @@ hr {
     margin-bottom: 16px;
 }
 .lamp-img img {
-    max-height: 100%;
-    max-width: 90%;
+    width: 100%;
+    height: 100%;
     object-fit: contain;
 }
 
@@ -136,7 +138,6 @@ footer {
         grid-template-columns: repeat(2, 1fr);
         gap: 40px 20px;
     }
-    .lamp-img { height: 220px; }
     .theme-toggle { top: 12px; right: 12px; }
 }
 @media (max-width: 420px) {
